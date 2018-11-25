@@ -37,6 +37,10 @@ class User
 
   field :full_name, type: String
   field :created_at, type: Time
+  field :dropbox_app_key, type: String
+  field :dropbox_app_secret, type: String
+  field :dropbox_access_token, type: String
+  field :dropbox_auth_token, type: String
 
   has_many :notes, dependent: :destroy
 end

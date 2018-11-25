@@ -10,5 +10,12 @@
   <%= @user.full_name %>
 </p>
 
+<p>
+  <strong>Backup data</strong>
+  <%= link_to "Sync to dropbox account", backup_notes_user_path(@user), remote: true  %>
+  &nbsp;&nbsp;&nbsp;
+  <span id="backup_status"></span>
+</p>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
