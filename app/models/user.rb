@@ -36,4 +36,7 @@ class User
   # field :locked_at,       type: Time
 
   field :full_name, type: String
+  field :created_at, type: Time
+
+  has_many :notes, dependent: :destroy
 end

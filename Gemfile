@@ -9,6 +9,8 @@ gem 'rails', '~> 5.2.1'
 gem 'mongoid', '~> 6.0'
 gem 'bson_ext'
 gem 'devise'
+gem 'bootstrap'
+gem 'jquery-rails'
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
